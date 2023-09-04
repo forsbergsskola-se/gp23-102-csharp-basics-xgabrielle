@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P2CodeExe.", "P2CodeExe\P2CodeExe..csproj", "{2EAAE5EF-496C-4F47-97CD-564DCFAB285F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P3PrintingOutput", "P3PrintingOutput\P3PrintingOutput.csproj", "{ABD9EF1D-3887-426C-95A2-C5440F1839AD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2EAAE5EF-496C-4F47-97CD-564DCFAB285F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2EAAE5EF-496C-4F47-97CD-564DCFAB285F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2EAAE5EF-496C-4F47-97CD-564DCFAB285F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2EAAE5EF-496C-4F47-97CD-564DCFAB285F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABD9EF1D-3887-426C-95A2-C5440F1839AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABD9EF1D-3887-426C-95A2-C5440F1839AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABD9EF1D-3887-426C-95A2-C5440F1839AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABD9EF1D-3887-426C-95A2-C5440F1839AD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
