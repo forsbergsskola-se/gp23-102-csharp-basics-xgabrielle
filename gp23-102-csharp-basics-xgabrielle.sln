@@ -8,6 +8,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P4Comments", "P4Comments\P4
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P5Variables", "P5Variables\P5Variables.csproj", "{7F6628A5-037B-4631-AD59-EC866EFD21EF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P6DataTypes", "P6DataTypes\P6DataTypes.csproj", "{583CA92D-BB88-48A6-BA83-350C023DB97B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P7Input", "P7Input\P7Input.csproj", "{BE83267C-1CE3-4D52-98D5-C1A9395AFC6A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +34,13 @@ Global
 		{7F6628A5-037B-4631-AD59-EC866EFD21EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7F6628A5-037B-4631-AD59-EC866EFD21EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7F6628A5-037B-4631-AD59-EC866EFD21EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{583CA92D-BB88-48A6-BA83-350C023DB97B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{583CA92D-BB88-48A6-BA83-350C023DB97B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{583CA92D-BB88-48A6-BA83-350C023DB97B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{583CA92D-BB88-48A6-BA83-350C023DB97B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE83267C-1CE3-4D52-98D5-C1A9395AFC6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE83267C-1CE3-4D52-98D5-C1A9395AFC6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE83267C-1CE3-4D52-98D5-C1A9395AFC6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE83267C-1CE3-4D52-98D5-C1A9395AFC6A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
