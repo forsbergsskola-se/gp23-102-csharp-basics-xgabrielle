@@ -2,15 +2,15 @@
 
 Console.WriteLine("Give me a number.");
 
-string number = Console.ReadLine();
+string numberInput = Console.ReadLine();
 
-double dbl = Convert.ToDouble(number);
+double dbl = double.Parse(numberInput);
 Console.WriteLine(dbl);
 
-int sgl = Convert.ToInt32(dbl);
+int sgl = (int) dbl;
 Console.WriteLine(sgl);
 
-int og = Convert.ToInt32(number);
+int og = int.Parse(numberInput);
 Console.WriteLine(og);
 
 // Idea??
