@@ -4,7 +4,9 @@ Console.WriteLine("Give me a number of sec.");
 string userInput = Console.ReadLine();
 
 float s = float.Parse(userInput);
-float day = s / 86400;
+float inTotal = s / 86400;
+
+Console.WriteLine(inTotal);
 
 
 // Exercise 1
