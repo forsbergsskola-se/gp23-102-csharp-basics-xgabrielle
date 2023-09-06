@@ -24,14 +24,14 @@ Console.WriteLine("There are " + result + " seconds in " + minute + " minutes");
 Console.WriteLine("Write 1 number:");
 string first = Console.ReadLine();
 
-float f = float.Parse(first);
+int f = int.Parse(first);
 
 Console.WriteLine("one more number:");
 string second = Console.ReadLine();
 
-float s = float.Parse(second);
+int s = int.Parse(second);
 
-float result = f / s;
+int result = f / s;
 
 Console.WriteLine(first + " divided by " + second + " = " + result);
 */
@@ -41,14 +41,14 @@ Console.WriteLine(first + " divided by " + second + " = " + result);
 Console.WriteLine("Write 1 number:");
 string first = Console.ReadLine();
 
-float f = float.Parse(first);
+int f = int.Parse(first);
 
 Console.WriteLine("one more number:");
 string second = Console.ReadLine();
 
-float s = float.Parse(second);
+int s = int.Parse(second);
 
-float result = f % s;
+int result = f % s;
 
 Console.WriteLine(first + " % " + second + " = " + result);
 */
@@ -77,28 +77,26 @@ Console.WriteLine("Area of the circle is " + result);
 Console.WriteLine("Write 1 number:");
 string first = Console.ReadLine();
 
-float f = float.Parse(first);
+int f = int.Parse(first);
 
 Console.WriteLine("one more number:");
 string second = Console.ReadLine();
 
-float s = float.Parse(second);
+int s = int.Parse(second);
 
-float result = f * s;
+int result = f * s;
 
 Console.WriteLine(first + " multiplied by " + second + " = " + result);
 */
 
 //Exercise 7
-
-Console.WriteLine("Write your height in metric :");
+/*
+Console.WriteLine("Write your height in meters :");
 string height = Console.ReadLine();
 
 float h = float.Parse(height);
 
-
 float heightx2 = h * h;
-
 
 Console.WriteLine("Write your weight in kilos:");
 string weight = Console.ReadLine();
@@ -107,4 +105,27 @@ float w = float.Parse(weight);
 
 float result = w / heightx2;
 
-Console.WriteLine("BMI = " + result); 
+Console.WriteLine("BMI = " + result);
+*/
+
+// Exercise 8
+/*
+Console.WriteLine("Write 1 number:");
+string UserAdjacentInput = Console.ReadLine();
+
+float adjacent = float.Parse(UserAdjacentInput);
+float adjacentX2 = adjacent * adjacent; 
+
+Console.WriteLine("Write 1 number:");
+string UserOppositeInput = Console.ReadLine();
+
+float opposite = float.Parse(UserOppositeInput);
+float oppsiteX2 = opposite * opposite;
+float squareIt = adjacentX2 + oppsiteX2;
+
+double result = Math.Sqrt(squareIt);
+
+Console.WriteLine("answer" + result);
+*/
+
+
