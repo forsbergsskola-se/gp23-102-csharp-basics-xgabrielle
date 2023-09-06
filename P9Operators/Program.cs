@@ -16,7 +16,7 @@ int result = sec * 60;
 Console.WriteLine("There are " + result + " seconds in " + minute + " minutes");
 */
 
-// Exercise 2
+/* Exercise 2
 
 Console.WriteLine("Write 1 number:");
 string first = Console.ReadLine();
@@ -31,3 +31,40 @@ float s = float.Parse(second);
 float result = f / s;
 
 Console.WriteLine(first + " divided by " + second + " = " + result);
+*/
+
+/* Exercise 3
+
+Console.WriteLine("Write 1 number:");
+string first = Console.ReadLine();
+
+float f = float.Parse(first);
+
+Console.WriteLine("one more number:");
+string second = Console.ReadLine();
+
+float s = float.Parse(second);
+
+float result = f % s;
+
+Console.WriteLine(first + " % " + second + " = " + result);
+*/
+
+/* Exercise 4
+
+Console.WriteLine("Write 1 number:");
+string userInput = Console.ReadLine();
+
+float radius = float.Parse(userInput);
+
+float radiusX2 = radius * radius;
+double pi = Math.PI;
+
+float f = Convert.ToSingle(pi);
+
+float result = radiusX2 * f;
+
+Console.WriteLine("Area of the circle is " + result);
+*/
+
+
