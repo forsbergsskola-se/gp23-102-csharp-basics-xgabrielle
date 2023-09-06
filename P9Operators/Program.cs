@@ -89,3 +89,22 @@ float result = f * s;
 Console.WriteLine(first + " multiplied by " + second + " = " + result);
 */
 
+//Exercise 7
+
+Console.WriteLine("Write your height in metric :");
+string height = Console.ReadLine();
+
+float h = float.Parse(height);
+
+
+float heightx2 = h * h;
+
+
+Console.WriteLine("Write your weight in kilos:");
+string weight = Console.ReadLine();
+
+float w = float.Parse(weight);
+
+float result = w / heightx2;
+
+Console.WriteLine("BMI = " + result); 
