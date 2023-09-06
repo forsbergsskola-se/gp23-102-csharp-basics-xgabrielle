@@ -1,11 +1,11 @@
 ﻿// See https://aka.ms/new-console-template for more information
-/*
+// Execise 10
 Console.WriteLine("Give me a number of sec.");
 string userInput = Console.ReadLine();
 
+float s = float.Parse(userInput);
+float day = s / 86400;
 
-Console.WriteLine("");
-*/
 
 // Exercise 1
 
@@ -128,4 +128,17 @@ double result = Math.Sqrt(squareIt);
 Console.WriteLine("answer" + result);
 */
 
+//Exercise 9
+/*
+Console.WriteLine("Give an amount of seconds:");
+string userInput = Console.ReadLine();
 
+int seconds = int.Parse(userInput);
+
+int spare = seconds % 60;
+
+//int i = (int) seconds;
+int minutes = seconds / 60;
+
+Console.WriteLine($"{userInput} = {minutes} and {spare} seconds");
+*/
