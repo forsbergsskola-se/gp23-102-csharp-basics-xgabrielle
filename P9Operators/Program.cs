@@ -1,12 +1,21 @@
 ﻿// See https://aka.ms/new-console-template for more information
 // Execise 10
+
+int TwentyFourHour = 86400;
 Console.WriteLine("Give me a number of sec.");
 string userInput = Console.ReadLine();
 
-float s = float.Parse(userInput);
-float inTotal = s / 86400;
 
-Console.WriteLine(inTotal);
+// in total days form
+float s = float.Parse(userInput);
+float inTotal = s / TwentyFourHour;
+
+// 1 day form
+int i = (int)s;
+int day = i / TwentyFourHour;
+
+
+Console.WriteLine(day +" and " + inTotal);
 
 
 // Exercise 1
@@ -122,12 +131,12 @@ Console.WriteLine("Write 1 number:");
 string UserOppositeInput = Console.ReadLine();
 
 float opposite = float.Parse(UserOppositeInput);
-float oppsiteX2 = opposite * opposite;
-float squareIt = adjacentX2 + oppsiteX2;
+float oppositeX2 = opposite * opposite;
+float squareIt = adjacentX2 + oppositeX2;
 
-double result = Math.Sqrt(squareIt);
+double sum = Math.Sqrt(squareIt);
 
-Console.WriteLine("answer" + result);
+Console.WriteLine("answer" + sum);
 */
 
 //Exercise 9
