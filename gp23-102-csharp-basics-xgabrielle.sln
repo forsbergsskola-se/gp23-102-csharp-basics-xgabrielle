@@ -16,6 +16,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P8Conversion", "P8Conversio
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P9Operators", "P9Operators\P9Operators.csproj", "{2EAD9FDC-C758-4413-9650-D5FD2E84CB5A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P10Boolean", "P10Boolean\P10Boolean.csproj", "{BE411162-B8CC-45A3-96C4-1E3C68E222F4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P11IfElse", "P11IfElse\P11IfElse.csproj", "{7F57B587-F5B9-48B8-8348-60F9AC89F9DE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -54,5 +58,13 @@ Global
 		{2EAD9FDC-C758-4413-9650-D5FD2E84CB5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2EAD9FDC-C758-4413-9650-D5FD2E84CB5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2EAD9FDC-C758-4413-9650-D5FD2E84CB5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE411162-B8CC-45A3-96C4-1E3C68E222F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE411162-B8CC-45A3-96C4-1E3C68E222F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE411162-B8CC-45A3-96C4-1E3C68E222F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE411162-B8CC-45A3-96C4-1E3C68E222F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F57B587-F5B9-48B8-8348-60F9AC89F9DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F57B587-F5B9-48B8-8348-60F9AC89F9DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F57B587-F5B9-48B8-8348-60F9AC89F9DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F57B587-F5B9-48B8-8348-60F9AC89F9DE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

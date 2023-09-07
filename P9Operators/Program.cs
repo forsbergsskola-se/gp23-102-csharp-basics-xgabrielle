@@ -1,21 +1,37 @@
 ﻿// See https://aka.ms/new-console-template for more information
 // Execise 10
 
-int TwentyFourHour = 86400;
+int TwentyFourHourSeconds = 86400;
+int TwentyFourHourMinutes = 1440;
+int TwentyFourHour = 24;
+
 Console.WriteLine("Give me a number of sec.");
 string userInput = Console.ReadLine();
 
+//1.10.17.36
+float floatInput = float.Parse(userInput);
 
 // in total days form
-float s = float.Parse(userInput);
-float inTotal = s / TwentyFourHour;
+float inTotal = floatInput / TwentyFourHourSeconds;
 
+//122400
+//1020
+
+//2040
 // 1 day form
-int i = (int)s;
-int day = i / TwentyFourHour;
+int intInput = (int)floatInput;
+int day = intInput / TwentyFourHourSeconds;
+
+int dayTwentyFour = day * 24;
+
+int hours = intInput / 60 / 60 - 24;
+
+int minutes = intInput / 60 - ( hours + dayTwentyFour) * 60;
+
+int seconds = intInput - (((hours + dayTwentyFour) * 60 * 60) + (minutes * 60));
 
 
-Console.WriteLine(day +" and " + inTotal);
+Console.WriteLine(seconds);
 
 
 // Exercise 1
