@@ -8,7 +8,7 @@ if (ageInput <= 12)
     Console.WriteLine("You're a child");
 }
 
-else if (ageInput >= 13 && ageInput <= 18)
+else if (ageInput <= 18)
 {
     Console.WriteLine("You're a teenager");
 }
@@ -22,30 +22,22 @@ else
 Console.WriteLine("Give me another number: ");
 int secondNumberInput = int.Parse(Console.ReadLine());
 
+int highestNum;
+
 if (secondNumberInput > ageInput)
-{
-    Console.WriteLine($"The maximum is: {secondNumberInput}");
-    if (secondNumberInput % 2 == 0)
-    {
-        Console.WriteLine("Your number is even");
-    }
-    else
-    {
-        Console.WriteLine("Your number is odd");
-    }
-}
+    highestNum = secondNumberInput;
 
 else
-{
-    Console.WriteLine($"The maximum number is: {ageInput}");
-    if (ageInput % 2 == 0)
-    {
-        Console.WriteLine("Your number is even");
-    }
-    else
-    {
-        Console.WriteLine("Your number is odd");
-    }
-}
+    highestNum = ageInput;
+
+
+Console.WriteLine($"The maximum number is: {highestNum}");
+
+if (highestNum % 2 == 0)
+    Console.WriteLine("Your number is even");
+
+else
+    Console.WriteLine("Your number is odd");
+
 
 

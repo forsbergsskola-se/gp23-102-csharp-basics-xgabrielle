@@ -2,36 +2,32 @@
 // Execise 10
 
 int TwentyFourHourSeconds = 86400;
-int TwentyFourHourMinutes = 1440;
-int TwentyFourHour = 24;
 
 Console.WriteLine("Give me a number of sec.");
 string userInput = Console.ReadLine();
 
-//1.10.17.36
+
 float floatInput = float.Parse(userInput);
 
 // in total days form
 float inTotal = floatInput / TwentyFourHourSeconds;
 
-//122400
-//1020
 
-//2040
+
 // 1 day form
 int intInput = (int)floatInput;
 int day = intInput / TwentyFourHourSeconds;
 
-int dayTwentyFour = day * 24;
+int oneDayHours = day * 24;
 
 int hours = intInput / 60 / 60 - 24;
 
-int minutes = intInput / 60 - ( hours + dayTwentyFour) * 60;
+int minutes = intInput / 60 - ( hours + oneDayHours) * 60;
 
-int seconds = intInput - (((hours + dayTwentyFour) * 60 * 60) + (minutes * 60));
+int seconds = intInput - (((hours + oneDayHours) * 60 * 60) + (minutes * 60));
 
 
-Console.WriteLine(seconds);
+Console.WriteLine($"{seconds} \n{minutes} \n{hours} \n{day} \n{day}.{hours}.{minutes}.{seconds} \n{inTotal}");
 
 
 // Exercise 1
