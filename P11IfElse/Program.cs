@@ -86,11 +86,12 @@ else
     Console.WriteLine($"{c} = lowest number");
 */
 
-// P11_3Characters
+// P11_3Characters WRONG!!!!
 
-
-Console.WriteLine("Give me a letter:");
+/*
+Console.WriteLine("Give me any character:");
 string userInput = Console.ReadLine();
+char charInput = char.Parse(userInput);
 
 
 if (userInput == ("a")|| userInput==("o") || userInput == ("u") 
@@ -99,3 +100,12 @@ if (userInput == ("a")|| userInput==("o") || userInput == ("u")
     
 else
 Console.WriteLine("Consonant");
+
+if (charInput > 0)
+    
+    Console.WriteLine("Number");
+    */
+    
+// P11_4Calculator
+
+    
