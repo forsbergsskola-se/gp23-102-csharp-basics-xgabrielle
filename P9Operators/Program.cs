@@ -1,34 +1,25 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿
 // Execise 10
-
+/*
 int TwentyFourHourSeconds = 86400;
 
 Console.WriteLine("Give me a number of sec.");
-string userInput = Console.ReadLine();
-
-
-float floatInput = float.Parse(userInput);
+float userInput = float.Parse(Console.ReadLine());
 
 // in total days form
-float inTotal = floatInput / TwentyFourHourSeconds;
+float inTotal = userInput / TwentyFourHourSeconds;
 
+// days, hour, min & sec
+int intInput = (int)userInput;
 
-
-// 1 day form
-int intInput = (int)floatInput;
 int day = intInput / TwentyFourHourSeconds;
-
 int oneDayHours = day * 24;
-
 int hours = intInput / 60 / 60 - 24;
-
 int minutes = intInput / 60 - ( hours + oneDayHours) * 60;
-
 int seconds = intInput - (((hours + oneDayHours) * 60 * 60) + (minutes * 60));
 
-
 Console.WriteLine($"{seconds} \n{minutes} \n{hours} \n{day} \n{day}.{hours}.{minutes}.{seconds} \n{inTotal}");
-
+*/
 
 // Exercise 1
 
@@ -117,51 +108,45 @@ Console.WriteLine(first + " multiplied by " + second + " = " + result);
 Console.WriteLine("Write your height in meters :");
 string height = Console.ReadLine();
 
-float h = float.Parse(height);
+float heightInput = float.Parse(height);
 
-float heightx2 = h * h;
+float heightx2 = heightInput * heightInput;
 
 Console.WriteLine("Write your weight in kilos:");
 string weight = Console.ReadLine();
 
-float w = float.Parse(weight);
+float weightInput = float.Parse(weight);
 
-float result = w / heightx2;
+float bmiOutput = weightInput / heightx2;
 
-Console.WriteLine("BMI = " + result);
+Console.WriteLine("BMI = " + bmiOutput);
 */
 
 // Exercise 8
 /*
-Console.WriteLine("Write 1 number:");
-string UserAdjacentInput = Console.ReadLine();
+float userAdjacentInput;
+float userOppositeInput;
 
-float adjacent = float.Parse(UserAdjacentInput);
-float adjacentX2 = adjacent * adjacent; 
+Console.WriteLine("Write 2 number:");
 
-Console.WriteLine("Write 1 number:");
-string UserOppositeInput = Console.ReadLine();
+userAdjacentInput = float.Parse(Console.ReadLine());
+userOppositeInput = float.Parse(Console.ReadLine());
 
-float opposite = float.Parse(UserOppositeInput);
-float oppositeX2 = opposite * opposite;
+float adjacentX2 = userAdjacentInput * userAdjacentInput; 
+float oppositeX2 = userOppositeInput * userOppositeInput;
 float squareIt = adjacentX2 + oppositeX2;
 
 double sum = Math.Sqrt(squareIt);
-
-Console.WriteLine("answer" + sum);
+Console.WriteLine("Answer: " + sum);
 */
 
 //Exercise 9
 /*
 Console.WriteLine("Give an amount of seconds:");
-string userInput = Console.ReadLine();
-
-int seconds = int.Parse(userInput);
+int seconds = int.Parse(Console.ReadLine());
 
 int spare = seconds % 60;
-
-//int i = (int) seconds;
 int minutes = seconds / 60;
 
-Console.WriteLine($"{userInput} = {minutes} and {spare} seconds");
+Console.WriteLine($"{seconds} = {minutes} minute(s) and {spare} second(s)");
 */

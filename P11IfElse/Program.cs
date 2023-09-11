@@ -1,5 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-
+﻿/*
 Console.WriteLine("What's you're age?");
 int ageInput = int.Parse(Console.ReadLine());
 
@@ -38,6 +37,65 @@ if (highestNum % 2 == 0)
 
 else
     Console.WriteLine("Your number is odd");
+*/
+
+// P11_1Grades
+/*
+Console.WriteLine("Give me a number:");
+int userInput = int.Parse(Console.ReadLine());
+
+if (userInput >=90)
+    Console.WriteLine("A");
+else if (userInput >=80)
+    Console.WriteLine("B");
+else if (userInput >=70)
+    Console.WriteLine("C");
+else if (userInput >=60)
+    Console.WriteLine("D");
+else
+    Console.WriteLine("F");
+    */
 
 
 
+// P11_2MinMax
+/*
+int a;
+int b;
+int c;
+
+Console.WriteLine("Give me 3 numbers:");
+
+a = int.Parse(Console.ReadLine());
+b = int.Parse(Console.ReadLine());
+c = int.Parse(Console.ReadLine());
+
+if ((a>b) && (a>c))
+    Console.WriteLine($"{a} = highest number");
+else if ((b>a) && (b>c))
+    Console.WriteLine($"{b} = highest number");
+else
+    Console.WriteLine($"{c} = highest number");
+
+
+if ((a<b) && (a<c))
+    Console.WriteLine($"{a} = lowest number");
+else if ((b<a) && (b<c))
+    Console.WriteLine($"{b} = lowest number");
+else
+    Console.WriteLine($"{c} = lowest number");
+*/
+
+// P11_3Characters
+
+
+Console.WriteLine("Give me a letter:");
+string userInput = Console.ReadLine();
+
+
+if (userInput == ("a")|| userInput==("o") || userInput == ("u") 
+    || userInput == ("e") || userInput == ("i")|| userInput ==("y"))
+    Console.WriteLine("Vowel");
+    
+else
+Console.WriteLine("Consonant");
