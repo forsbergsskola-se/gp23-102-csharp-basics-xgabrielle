@@ -88,24 +88,24 @@ else
 
 // P11_3Characters WRONG!!!!
 
-/*
+
 Console.WriteLine("Give me any character:");
 string userInput = Console.ReadLine();
 char charInput = char.Parse(userInput);
+int number = int.Parse(userInput);
 
 
-if (userInput == ("a")|| userInput==("o") || userInput == ("u") 
+if (charInput == ('a')|| userInput==("o") || userInput == ("u") 
     || userInput == ("e") || userInput == ("i")|| userInput ==("y"))
     Console.WriteLine("Vowel");
+
+else if (number > 0)
     
+    Console.WriteLine("Number");  
 else
 Console.WriteLine("Consonant");
 
-if (charInput > 0)
-    
-    Console.WriteLine("Number");
-    */
-    
-// P11_4Calculator
 
     
+    
+// P11_4Calculator
