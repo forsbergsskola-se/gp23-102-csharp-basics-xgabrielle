@@ -88,7 +88,7 @@ else
 
 // P11_3Characters
 
-
+/*
 Console.WriteLine("Give me any character:");
 string userInput = Console.ReadLine();
 char userChar = char.Parse(userInput);
@@ -105,9 +105,21 @@ if (IsLetter)
 
 else
     Console.WriteLine("Number");
+*/
 
-    
-
-    
-    
 // P11_4Calculator
+
+
+
+// P11_5EvenOrOdd
+/*
+Console.WriteLine("Write a number:");
+
+int userInput = int.Parse(Console.ReadLine());
+
+if (userInput % 2 == 0)
+    Console.WriteLine("That's an even number");
+
+else
+    Console.WriteLine("That is an odd number");
+    */
