@@ -86,20 +86,27 @@ else
     Console.WriteLine($"{c} = lowest number");
 */
 
-// P11_3Characters WRONG!!!!
+// P11_3Characters
 
 
 Console.WriteLine("Give me any character:");
 string userInput = Console.ReadLine();
+char userChar = char.Parse(userInput);
+bool IsLetter = char.IsLetter(userChar);
+if (IsLetter)
+{
+    if (userInput == ("a")|| userInput==("o") || userInput == ("u") 
+        || userInput == ("e") || userInput == ("i")|| userInput ==("y"))
+        Console.WriteLine("Vowel");
 
-
-if (userInput == ("a")|| userInput==("o") || userInput == ("u") 
-    || userInput == ("e") || userInput == ("i")|| userInput ==("y"))
-    Console.WriteLine("Vowel");
+    else
+        Console.WriteLine("Consonant");
+}
 
 else
-Console.WriteLine("Consonant");
+    Console.WriteLine("Number");
 
+    
 
     
     
