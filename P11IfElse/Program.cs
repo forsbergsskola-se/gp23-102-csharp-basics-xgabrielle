@@ -3,24 +3,18 @@ Console.WriteLine("What's you're age?");
 int ageInput = int.Parse(Console.ReadLine());
 
 if (ageInput <= 12)
-{
     Console.WriteLine("You're a child");
-}
 
 else if (ageInput <= 18)
-{
     Console.WriteLine("You're a teenager");
-}
 
 else
-{
     Console.WriteLine("You're an adult");
-}
+
 
 // Second round
 Console.WriteLine("Give me another number: ");
 int secondNumberInput = int.Parse(Console.ReadLine());
-
 int highestNum;
 
 if (secondNumberInput > ageInput)
@@ -28,8 +22,6 @@ if (secondNumberInput > ageInput)
 
 else
     highestNum = ageInput;
-
-
 Console.WriteLine($"The maximum number is: {highestNum}");
 
 if (highestNum % 2 == 0)
@@ -108,8 +100,25 @@ else
 */
 
 // P11_4Calculator
+/*
+int a;
+char b;
+int c;
+Console.WriteLine("What would you like to calculate?");
 
+int userFirstInput = int.Parse(Console.ReadLine());
+char userSignInput = char.Parse(Console.ReadLine());
+int userSecondInput = int.Parse(Console.ReadLine());
 
+if (userSignInput=='+')
+    Console.WriteLine(userFirstInput+userSecondInput);
+else if (userSignInput=='-')
+    Console.WriteLine(userFirstInput-userSecondInput);
+else if (userSignInput=='*')
+    Console.WriteLine(userFirstInput*userSecondInput);
+else if (userSignInput=='/')
+    Console.WriteLine(userFirstInput/userSecondInput);
+*/
 
 // P11_5EvenOrOdd
 /*
