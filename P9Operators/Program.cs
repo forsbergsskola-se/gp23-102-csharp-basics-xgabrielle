@@ -141,7 +141,7 @@ Console.WriteLine("Answer: " + sum);
 */
 
 //Exercise 9
-/*
+
 Console.WriteLine("Give an amount of seconds:");
 int seconds = int.Parse(Console.ReadLine());
 
@@ -149,4 +149,3 @@ int spare = seconds % 60;
 int minutes = seconds / 60;
 
 Console.WriteLine($"{seconds} = {minutes} minute(s) and {spare} second(s)");
-*/

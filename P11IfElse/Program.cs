@@ -121,7 +121,7 @@ else if (userSignInput=='/')
 */
 
 // P11_5EvenOrOdd
-/*
+
 Console.WriteLine("Write a number:");
 
 int userInput = int.Parse(Console.ReadLine());
@@ -131,4 +131,4 @@ if (userInput % 2 == 0)
 
 else
     Console.WriteLine("That is an odd number");
-    */
+    
