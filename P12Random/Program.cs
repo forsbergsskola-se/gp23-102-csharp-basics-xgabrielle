@@ -48,8 +48,8 @@ else
 */
 
 //P12_3Random_Item
-/*
+
 Random droppedItem = new Random();
 string[] item = new string[]{"cat","knife", "stone", "pig", "apple"};
-/*
+
 
