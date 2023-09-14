@@ -1,29 +1,40 @@
-﻿Console.WriteLine("Welcome to Nim!");
-//string match = (Convert.ToChar(124)).ToString();
-int unicode = 124;
-char character = (char) unicode;
-string match = character.ToString();
-for (int i = 0; i<24; i++)
-    Console.Write(match);
+﻿Console.WriteLine("Welcome to Nim");
+int matches = 24;
 
-Console.WriteLine("\nHow many matches do you want to draw?");
-int userMatches = int.Parse(Console.ReadLine());
-
-//int j =2;
-//int k =3;
-//int l;
-for (int i = 24; i > 1; i--)
+drawAgain:
+Console.WriteLine("Remove 1-3 matches");
+Console.WriteLine("User");
+int draw = int.Parse(Console.ReadLine());
+if (draw > 3)
 {
-    if (userMatches == 1)
-    {
-        Console.Write(match);
-    }
-    
-        
-    
-    
+    Console.WriteLine("Don't do that, Choose 1-3 please");
+    goto drawAgain;
 }
 
+matches = matches - draw;
+if (matches > 1)
+{
+    
+    Console.WriteLine(matches);
+    int aiDraw = Random.Shared.Next(1,4);
+    Console.WriteLine("Ai");
+    Console.WriteLine(aiDraw);
+    Console.WriteLine(matches-aiDraw);
+    matches -= aiDraw;
+   
+    if (matches > 1)
+    {
+       
+        goto drawAgain;
+    }
+
+    Console.WriteLine("artificial user loser");
+
+}
+else
+{
+    Console.WriteLine("user loser");
+}
 
 
     
