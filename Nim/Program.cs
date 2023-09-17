@@ -12,7 +12,7 @@ if (draw > 3)
 }
 
 matches = matches - draw;
-if (matches > 1)
+if (matches > 0)
 {
     
     Console.WriteLine(matches);
@@ -21,10 +21,9 @@ if (matches > 1)
     Console.WriteLine(aiDraw);
     Console.WriteLine(matches-aiDraw);
     matches -= aiDraw;
-   
-    if (matches > 1)
+    
+    if (matches > 0)
     {
-       
         goto drawAgain;
     }
 
