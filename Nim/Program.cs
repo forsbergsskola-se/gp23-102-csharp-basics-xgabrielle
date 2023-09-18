@@ -4,15 +4,21 @@ int matches = 24;
 drawAgain:
 Console.WriteLine("Remove 1-3 matches");
 Console.WriteLine("User");
-int draw = int.Parse(Console.ReadLine());
-if (draw > 3)
+//int draw = int.Parse(Console.ReadLine());
+if (!int.TryParse(Console.ReadLine(), out int draw))
 {
-    Console.WriteLine("Don't do that, Choose 1-3 please");
+    Console.WriteLine("You can't do that, choose 1-3 please");
+    goto drawAgain;
+}
+
+if (draw > 3 ||(draw <=0))
+{
+    Console.WriteLine("Don't do that, choose 1-3 please");
     goto drawAgain;
 }
 
 matches = matches - draw;
-if (matches > 0)
+if (matches > 1)
 {
     
     Console.WriteLine(matches);
@@ -22,17 +28,18 @@ if (matches > 0)
     Console.WriteLine(matches-aiDraw);
     matches -= aiDraw;
     
-    if (matches > 0)
+    if (matches > 1)
     {
         goto drawAgain;
     }
 
-    Console.WriteLine("artificial user loser");
+    Console.WriteLine("user loser");
 
 }
+
 else
 {
-    Console.WriteLine("user loser");
+    Console.WriteLine("artificial user loser");
 }
 
 
