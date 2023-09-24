@@ -1,7 +1,8 @@
 ﻿
 // Execise 10
-/*
+
 int TwentyFourHourSeconds = 86400;
+int OneHourSeconds = 3600;
 
 Console.WriteLine("Give me a number of sec.");
 float userInput = float.Parse(Console.ReadLine());
@@ -12,14 +13,14 @@ float inTotal = userInput / TwentyFourHourSeconds;
 // days, hour, min & sec
 int intInput = (int)userInput;
 
-int day = intInput / TwentyFourHourSeconds;
-int oneDayHours = day * 24;
-int hours = intInput / 60 / 60 - 24;
-int minutes = intInput / 60 - ( hours + oneDayHours) * 60;
-int seconds = intInput - (((hours + oneDayHours) * 60 * 60) + (minutes * 60));
+int days = intInput / TwentyFourHourSeconds;
+int hours = intInput % TwentyFourHourSeconds / OneHourSeconds;
+int minutes = intInput % OneHourSeconds / 60;
+int seconds = intInput % 60 ;
 
-Console.WriteLine($"{seconds} \n{minutes} \n{hours} \n{day} \n{day}.{hours}.{minutes}.{seconds} \n{inTotal}");
-*/
+Console.WriteLine($"Seconds:{seconds}\nMinutes:{minutes}\nHours:{hours}\nDays:{days}" +
+                  $"\n{days}:{hours}:{minutes}:{seconds}\nIn total that's:{inTotal} days");
+
 
 // Exercise 1
 
@@ -141,7 +142,7 @@ Console.WriteLine("Answer: " + sum);
 */
 
 //Exercise 9
-
+/*
 Console.WriteLine("Give an amount of seconds:");
 int seconds = int.Parse(Console.ReadLine());
 
@@ -149,3 +150,4 @@ int spare = seconds % 60;
 int minutes = seconds / 60;
 
 Console.WriteLine($"{seconds} = {minutes} minute(s) and {spare} second(s)");
+*/
