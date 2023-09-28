@@ -1,12 +1,10 @@
 ﻿Console.WriteLine("Welcome to Nim");
 int matches = 24;
-int aiDraw = Random.Shared.Next(1,4);
 
 drawAgain:
-Console.WriteLine("||||||||||||||||||||||||");
 Console.WriteLine("Remove 1-3 matches");
 Console.WriteLine("User");
-string matchVisual = "|";
+//int draw = int.Parse(Console.ReadLine());
 if (!int.TryParse(Console.ReadLine(), out int draw))
 {
     Console.WriteLine("You can't do that, choose 1-3 please");
@@ -19,39 +17,52 @@ if (draw > 3 ||(draw <=0))
     goto drawAgain;
 }
 
-
-
-if (matches == 3)
-    aiDraw = 2;
-
-
-if (matches == 2)
-    aiDraw = 1;
-
 matches = matches - draw;
-if (matches > 1)
+
+{
+    // go back to here
+    int matchesToDraw = matches;
+    go:
+    if (matchesToDraw > 0)
+    {
+        Console.Write("|");
+        matchesToDraw--;
+        goto go;
+    }
+    Console.WriteLine(matches);
+}
+
+if (matches > 0)
 {
     
-    Console.WriteLine(matches);
-    
+    int aiDraw = Random.Shared.Next(1,4);
     Console.WriteLine("Ai");
-    Console.WriteLine(aiDraw);
-    Console.WriteLine(matches-aiDraw);
+    Console.WriteLine($"The AI draws {aiDraw} matches.");
     matches -= aiDraw;
+    {
+        // go back to here
+        int matchesToDraw = matches;
+        go:
+        if (matchesToDraw > 0)
+        {
+            Console.Write("|");
+            matchesToDraw--;
+            goto go;
+        }
+        Console.WriteLine(matches);
+    }
     
-    
-    if (matches > 1)
+    if (matches > 0)
     {
         goto drawAgain;
     }
 
-    Console.WriteLine("user loser");
+    Console.WriteLine("ai loser");
 
 }
-
 else
 {
-    Console.WriteLine("artificial user loser");
+    Console.WriteLine("user loser");
 }
 
 
